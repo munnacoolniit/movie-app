@@ -3,8 +3,7 @@ import MovieCard from "./MovieCard";
 import { Movie, useMovieStore } from "@/store/movie";
 
 const PopularMovies = () => {
-
-  const movies= useMovieStore((state) => state.movies);
+  const movies = useMovieStore((state) => state.movies);
   const moviesType = useMovieStore((state) => state.type);
 
   return (
@@ -12,7 +11,7 @@ const PopularMovies = () => {
       <div className="flex justify-between items-center mt-4">
         <h1 className="text-2xl font-medium">{moviesType}</h1>
       </div>
-      <div className="grid grid-cols-4 mt-4 gap-4">
+      <div className="grid grid-row-1 md:grid-cols-4 mt-4 gap-8">
         {movies?.map((movie: Movie) => (
           <MovieCard key={movie?.id} movie={movie} />
         ))}
