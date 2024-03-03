@@ -6,7 +6,7 @@ import React from "react";
 
 const CastCard = ({ cast }: { cast: Cast }) => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col  py-[16px]">
       <div className="relative w-[120px] h-[120px]">
         <Image
           src={

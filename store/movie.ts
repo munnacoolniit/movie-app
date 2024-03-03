@@ -71,7 +71,6 @@ export const useMovieStore = create<MovieValue & MovieActions>((set) => ({
     runtime: 0,
     vote_count: 0,
   } ,
-  
   type: '',
   casts: [],
   favs: [],

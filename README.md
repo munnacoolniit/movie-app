@@ -10,7 +10,7 @@ npm
 cp .env
 ```
 
-# Running a Single Theme [Dev Mode]
+# Running a [Dev Mode]
 
 ```bash
 npm run dev
@@ -21,7 +21,3 @@ nmp run build
 ```
 
 Once the build is finished we can run the server with node.
-
-```bash
-node dist/server.js
-```

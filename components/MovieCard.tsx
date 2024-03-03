@@ -50,7 +50,7 @@ const MovieCard = ({ movie }: { movie: Movie }) => {
           />
         </div>
       </Link>
-      <div className="flex-row space-y-1 justify-between items-center bg-red px-[8px] py-[12px]">
+      <div className="flex-row space-y-1 justify-between items-center bg-red p-[16px]">
         <div className="flex justify-between items-center gap-1">
           <h2 className="text-lg font-bold text-slate-700 truncate">
             {movie?.title}
@@ -65,8 +65,12 @@ const MovieCard = ({ movie }: { movie: Movie }) => {
             />
           </span>
         </div>
-        <div className="text-[14px] text-slate-500">{formattedDate}</div>
-        <p className="line-clamp-2 text-slate-600">{movie?.overview}</p>
+        {formattedDate && (
+          <div className="text-[13px] text-slate-500">{formattedDate}</div>
+        )}
+        <p className="line-clamp-2 text-[#666666] text-[14px] font-medium">
+          {movie?.overview}
+        </p>
       </div>
     </div>
   );
