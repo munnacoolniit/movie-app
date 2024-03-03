@@ -1,16 +1,20 @@
 # Installing dependencies
 
 ```bash
-npm
+npm install
 ```
 
 # Copy Local Env File to Root
 
 ```
-cp .env
+cp .env.example
 ```
 
 # Running a [Dev Mode]
+
+```bash
+Node v18
+```
 
 ```bash
 npm run dev
